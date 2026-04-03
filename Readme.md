@@ -4,6 +4,8 @@ Projeto BI End-to-End — da extração automatizada em Python com conversão de
 
 Este projeto demonstra competências integradas em **Arquitetura de Dados**, **SQL Avançado** e **Business Intelligence**, com foco em métricas globais de rentabilidade e eficiência logística.
 
+![Demonstração do Dashboard](assets/Gif_-_Superstore.gif)
+
 ---
 
 ## 🔗 Acesso ao Projeto
@@ -65,6 +67,8 @@ O projeto segue arquitetura dimensional com separação entre fato e dimensões:
 
 > As dimensões estruturais e a view fato principal são orquestradas via Views SQL diretamente no banco de dados, o que reduz drasticamente a carga de processamento do Power BI. Complementarmente, as tabelas de inteligência analítica (dCalendario, Tabela Seleção, Máscara DRE e Tabela Moeda) foram desenvolvidas internamente no Power BI, permitindo o uso de lógica DAX avançada para dinamismo de interface e cálculos de Time Intelligence.
 
+![Modelo de Dados — Star Schema](assets/modelo_dados.png)
+
 ---
 
 ### 📊 Dashboard Power BI — Três Camadas Analíticas
@@ -74,6 +78,8 @@ O dashboard é organizado em três páginas com propósitos analíticos distinto
 #### Página 1 — Performance Global
 Visão executiva da saúde financeira da operação.
 
+![Performance Global](assets/dashboard_screens/pagina1.png)
+
 - **KPIs principais:** Receita Líquida, Volume de Vendas, Lucro Bruto, Lucro Líquido e Margem Líquida — todos com comparativo vs. Mês Anterior e vs. Ano Anterior
 - **Visual de Ranking Dinâmico** — Gráfico de barras multifunção que alterna automaticamente entre três visões analíticas (Países com Maior Contribuição de Lucro, Melhor Rentabilidade (%) ou Maior Custo Logístico (%)), permitindo um diagnóstico rápido de performance global.
 - **Evolução mensal de Receita vs. Despesas Totais** — evidenciando sazonalidade
@@ -82,6 +88,8 @@ Visão executiva da saúde financeira da operação.
 
 #### Página 2 — Diagnóstico de Margem
 Análise do impacto de descontos e custos na rentabilidade por categoria.
+
+![Diagnóstico de Margem](assets/dashboard_screens/pagina2.png)
 
 - **KPIs:** % Desconto Médio, Qtd. de Produtos Deficitários, Peso do Frete na Margem, % Rentabilidade Operacional e SubCategoria com maior prejuízo
 - **Tabela de categorias** com Crescimento Qtd.%, Margem Bruta, Peso Frete e Desconto Médio — navegável por hierarquia
@@ -93,6 +101,8 @@ Análise do impacto de descontos e custos na rentabilidade por categoria.
 
 #### Página 3 — Eficiência Logística
 Análise da operação de envio por modal, região e produto.
+
+![Eficiência Logística](assets/dashboard_screens/pagina3.png)
 
 - **KPIs:** SLA Médio de Envio, Custo Médio por Frete, % Envios Econômicos, Valor Médio por Pedido e Região de Maior Custo
 - **Tabela de SLA por Modo de Envio e Região** — Prazo e Frete Médio para Classe Econômica, Mesmo Dia e Primeira Classe
