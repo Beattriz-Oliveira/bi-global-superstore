@@ -1,5 +1,6 @@
 # Superstore Global: Otimização Logística e Rentabilidade
 
+
 Projeto BI End-to-End — da extração automatizada em Python com conversão de moeda via API em tempo real, até a modelagem dimensional em nuvem (Aiven MySQL) e visualização estratégica em Power BI com três camadas analíticas distintas.
 
 Este projeto demonstra competências integradas em **Arquitetura de Dados**, **SQL Avançado** e **Business Intelligence**, com foco em métricas globais de rentabilidade e eficiência logística.
