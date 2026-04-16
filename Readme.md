@@ -170,7 +170,7 @@ A centralização dos dados permitiu identificar:
 
 | Campo | Informação |
 |---|---|
-| Analista | Beatriz Santana |
+| Analista | Beattriz Oliveira Santana |
 | Foco | Data Architecture · DBA · Business Intelligence |
 | Especialidade | SQL, Python, Power BI & Cloud Data |
 | Ano | 2026 |
