@@ -15,4 +15,4 @@ for arquivo in arquivos:
     origem = os.path.join(path,arquivo)
     destino = os.path.join("data",arquivo)
     shutil.move(origem,destino)
-    print(f"✅ {arquivo} movido com sucesso!")
+    print(f"{arquivo} movido com sucesso!")

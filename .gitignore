@@ -1,8 +1,8 @@
-venv/
+.venv/
 .env
 logs/*.log
 __pycache__/
 *.pyc
 Projeto_BI_Superstore.pbix
-data/
-Gif - Superstore.gif
+data/*
+!data/vendas_Processadas.csv
