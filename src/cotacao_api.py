@@ -1,37 +1,46 @@
 import os
 import requests
+from datetime import datetime, timedelta
 from dotenv import load_dotenv
 from sqlalchemy import create_engine, exc
 from urllib.parse import quote_plus
 
-# Carregamento da chave
+# Carregamento da chave para o banco de dados
 load_dotenv()
 
 def buscar_cotacao_dolar():
+    print("° Consultando API do Banco Central do Brasil (Olinda)...")
+    hoje = datetime.now()
+    cotacao = None
+    
+    for i in range(5):
+        data_busca = (hoje - timedelta(days=i)).strftime("%m-%d-%Y")
+        url = (
+            "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/"
+            f"CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao='{data_busca}'"
+            "&$top=100&$format=json"
+        )
 
-    print("° Consultando ExchangeRate-API...")
+        try:
+            resposta = requests.get(url, timeout=10)
+            dados = resposta.json()
+            resultados = dados.get('value', [])
 
-    api = os.getenv("API_Key")
-    url = f"https://v6.exchangerate-api.com/v6/{api}/pair/USD/BRL"
+            if resultados:
+                
+                # Pega a última cotação (fechamento ou última parcial do dia)
+                cotacao = float(resultados[-1]['cotacaoVenda'])
+                data_formatada = (hoje - timedelta(days=i)).strftime("%d/%m/%Y")
+                print(f"° Cotação obtida via BACEN ({data_formatada}): R$ {cotacao:.4f}")
+                return cotacao
 
-    try:
-        resposta = requests.get(url)
-        dados = resposta.json()
+        except Exception as e:
+            print(f"Falha na requisição para a data {data_busca}: {e}")
+            break
 
-        if dados.get('result') == 'success':
-            cotacao = float(dados['conversion_rate'])
 
-            print(f"° Cotação obtida via API: R$ {cotacao:.2f}")
-
-            return cotacao
-
-        else:
-            print(f"Erro na API: {dados.get('error-type')}")
-            return 5.50
-
-    except Exception as e:
-        print(f"Falha na requisição: {e}")
-        return 5.50
+    print("Não foi possível obter a cotação recente. Usando valor padrão.")
+    return 5.07
 
 def conexao_bd():
     user = os.getenv("DB_USER")
