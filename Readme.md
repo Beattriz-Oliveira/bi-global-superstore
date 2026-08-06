@@ -213,7 +213,7 @@ Conflito de locale (separador decimal). Delete o passo automático "Changed Type
 
 ## 👩‍💻 Autoria
 
-* **Analista:** Beattriz Oliveira Satn'ana
-* **Segmento:** Análista de Business Intelligence
+* **Analista:** Beattriz Oliveira Sant'ana
+* **Segmento:** Analista de Business Intelligence
 * **Foco:** Data Architecture · Business Intelligence
 * **Ano:** 2026
