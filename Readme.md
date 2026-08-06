@@ -1,6 +1,11 @@
 # Global Superstore: Diagnóstico de Rentabilidade e Eficiência Logística
 
 Projeto de BI end-to-end que audita e diagnostica a rentabilidade e a eficiência logística de uma operação de varejo global, da extração em Python até a visualização final em Power BI.
+
+<a href="https://app.powerbi.com/view?r=eyJrIjoiMjRiY2I5ZGQtOTA4MS00NzA5LWEyZmMtODI1NDBiZDM2ODc5IiwidCI6IjkwNzg5MzgzLTExYjMtNGQ0My05YjI4LWNlNDM1M2IyZDg1NSJ9" target="_blank">
+  <img src="assets/Gif%20-%20Superstore.gif" alt="Demonstração do Dashboard" width="100%">
+</a>
+
 ---
 
 ## 🔗 Acesso ao Projeto
