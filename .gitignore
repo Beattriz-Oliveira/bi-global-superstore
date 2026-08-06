@@ -6,4 +6,4 @@ __pycache__/
 Projeto_BI_Superstore.pbix
 data/*
 !data/vendas_Processadas.csv
-assests/Thumbnail.png
+assests/Thumbnail.png 
