@@ -2,7 +2,7 @@
 
 Projeto de BI end-to-end que audita e diagnostica a rentabilidade e a eficiência logística de uma operação de varejo global, da extração em Python até a visualização final em Power BI.
 
-![Demonstração do Dashboard](assets/Gif%20-%20Superstore.gif)
+![Demonstração do Dashboard](assets/Gif%20-%20Superstore.gif)(https://app.powerbi.com/view?r=eyJrIjoiMjRiY2I5ZGQtOTA4MS00NzA5LWEyZmMtODI1NDBiZDM2ODc5IiwidCI6IjkwNzg5MzgzLTExYjMtNGQ0My05YjI4LWNlNDM1M2IyZDg1NSJ9)
 
 ---
 
@@ -10,7 +10,7 @@ Projeto de BI end-to-end que audita e diagnostica a rentabilidade e a eficiênci
 
 | Recurso | Link |
 |---|---|
-| 📊 Dashboard | *(https://app.powerbi.com/view?r=eyJrIjoiMjRiY2I5ZGQtOTA4MS00NzA5LWEyZmMtODI1NDBiZDM2ODc5IiwidCI6IjkwNzg5MzgzLTExYjMtNGQ0My05YjI4LWNlNDM1M2IyZDg1NSJ9)* |
+| 📊 Dashboard | https://app.powerbi.com/view?r=eyJrIjoiMjRiY2I5ZGQtOTA4MS00NzA5LWEyZmMtODI1NDBiZDM2ODc5IiwidCI6IjkwNzg5MzgzLTExYjMtNGQ0My05YjI4LWNlNDM1M2IyZDg1NSJ9 |
 | 🗂️ Dataset original | [Global Superstore — Kaggle](https://www.kaggle.com/datasets/anandaramg/global-superstore) |
 
 > **Nota sobre a fonte dos dados:** apesar da descrição do dataset no Kaggle mencionar a Walmart, o schema de colunas corresponde ao clássico "Sample/Global Superstore", um dataset fictício originado da Tableau e amplamente reutilizado em portfólios de BI. Tratado aqui como estudo de caso de varejo global, sem vínculo real com nenhuma empresa específica.
@@ -211,8 +211,7 @@ Conflito de locale (separador decimal). Delete o passo automático "Changed Type
 
 ## 👩‍💻 Autoria
 
-| Campo | Informação |
-|---|---|
-| Analista | Beattriz Oliveira Santana |
-| Foco | Data Architecture · Business Intelligence |
-| Ano | 2026 |
+* **Analista:** Beattriz Oliveira Satn'ana
+* **Segmento:** Análista de Business Intelligence
+* **Focos:** Data Architecture · Business Intelligence
+* **Ano:** 2026
