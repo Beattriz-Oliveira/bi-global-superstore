@@ -215,5 +215,5 @@ Conflito de locale (separador decimal). Delete o passo automático "Changed Type
 
 * **Analista:** Beattriz Oliveira Satn'ana
 * **Segmento:** Análista de Business Intelligence
-* **Focos:** Data Architecture · Business Intelligence
+* **Foco:** Data Architecture · Business Intelligence
 * **Ano:** 2026
